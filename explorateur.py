@@ -10,7 +10,7 @@ from PIL import Image, ImageTk, ImageOps, ImageDraw
 class TacticalSentinelOS:
     def __init__(self, root):
         self.root = root
-        self.root.title("SYS-NET // TACTICAL SENTINEL v37.2 (Gestionnaire de tâches actif)")
+        self.root.title("EXPLORATEUR")
         self.root.geometry("1500x900")
 
         # Palette de couleurs avec fond "Gris Ciel" technique
@@ -219,7 +219,7 @@ class TacticalSentinelOS:
         self.canvas.delete("all")
         try:
             if self.current_path == "HOME_HUB":
-                self.path_display_lbl.config(text="SENTINEL_HUB // ACCÈS RAPIDE & LECTEURS")
+                self.path_display_lbl.config(text="ACCÈS RAPIDE & LECTEURS")
                 home = os.path.expanduser("~")
                 quick_access_items = [
                     ("Accueil", home),
